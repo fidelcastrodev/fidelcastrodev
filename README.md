@@ -6,7 +6,7 @@ I am a computer software and hardware enthusiast, who has learnt a variety of pr
 ---
 
 Web Development Stack
-![React](https://img.shields.io/badge/Library-React-61DAFB?logo=react&logoColor=white) ![TypeScript](https://img.shields.io/badge/Language-TypeScript-3178C6?logo=typescript&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/CSS-TailwindCSS-06B6D4?logo=tailwindcss&logoColor=white) ![Rust](https://img.shields.io/badge/Language-Rust-000000?logo=rust&logoColor=white) ![Axum](https://img.shields.io/badge/Framework-Axum-000000?logo=rust&logoColor=white)
+![React](https://img.shields.io/badge/Library-React-61DAFB?logo=react&logoColor=white) ![TypeScript](https://img.shields.io/badge/Language-TypeScript-3178C6?logo=typescript&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/Framework-TailwindCSS-06B6D4?logo=tailwindcss&logoColor=white) ![Rust](https://img.shields.io/badge/Language-Rust-000000?logo=rust&logoColor=white) ![Axum](https://img.shields.io/badge/Framework-Axum-000000?logo=rust&logoColor=white)
   
 
 Database Stack
