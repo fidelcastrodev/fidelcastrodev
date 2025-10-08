@@ -869,13 +869,19 @@ class Interpreter:
                     raise TypeError(f"Expected bool, got {type(value).__name__}")
             
             # Check if variable exists (reassignment vs new definition)
-            try:
-                env.get(node.name)
-                # Variable exists, try to reassign
-                env.set(node.name, value)
-            except NameError:
-                # New variable
+            # If we have a type annotation, it's always a new definition
+            if node.type_annotation is not None:
+                # New variable definition with type annotation
                 env.define(node.name, value, node.is_mutable)
+            else:
+                # No type annotation - could be reassignment or new definition
+                try:
+                    env.get(node.name)
+                    # Variable exists, try to reassign
+                    env.set(node.name, value)
+                except NameError:
+                    # New variable without type annotation (type inference)
+                    env.define(node.name, value, node.is_mutable)
             
             return value
         
