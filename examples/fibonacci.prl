@@ -1,0 +1,29 @@
+# Fibonacci sequence in Pyrustlang
+# Demonstrates loops, functions, and arithmetic
+
+fn fibonacci(n: i32) -> i32 {
+    if n <= 1 {
+        return n
+    }
+    
+    let mut a: i32 = 0
+    let mut b: i32 = 1
+    let mut i: i32 = 2
+    
+    while i <= n {
+        let mut temp = a + b
+        a = b
+        b = temp
+        i = i + 1
+    }
+    
+    return b
+}
+
+# Print first 10 Fibonacci numbers
+let mut counter: i32 = 0
+while counter < 10 {
+    let mut fib = fibonacci(counter)
+    print(fib)
+    counter = counter + 1
+}

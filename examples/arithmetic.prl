@@ -1,0 +1,13 @@
+# Arithmetic operations in Pyrustlang
+
+let a: i32 = 10
+let b: i32 = 3
+
+print(a + b)  # Addition: 13
+print(a - b)  # Subtraction: 7
+print(a * b)  # Multiplication: 30
+print(a / b)  # Division: 3.333...
+
+# Complex expressions
+let result = (a + b) * 2 - 5
+print(result)  # (10 + 3) * 2 - 5 = 21

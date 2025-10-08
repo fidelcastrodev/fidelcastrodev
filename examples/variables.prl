@@ -1,0 +1,23 @@
+# Variable declarations in Pyrustlang
+# Demonstrates Python-like syntax with Rust-inspired type annotations
+
+# Immutable variable (Rust-inspired)
+let x: i32 = 42
+print(x)
+
+# Mutable variable (Rust-inspired)
+let mut y: i32 = 10
+print(y)
+y = 20
+print(y)
+
+# Type inference (Python-like)
+let name = "Alice"
+print(name)
+
+# Different types
+let pi: f64 = 3.14159
+print(pi)
+
+let is_active: bool = true
+print(is_active)

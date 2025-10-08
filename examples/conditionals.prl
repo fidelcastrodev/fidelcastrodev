@@ -1,0 +1,26 @@
+# Conditional statements in Pyrustlang
+# Python-like control flow with Rust-like syntax
+
+let age: i32 = 18
+
+if age >= 18 {
+    print("You are an adult")
+} else {
+    print("You are a minor")
+}
+
+# Comparison operators
+let x: i32 = 5
+let y: i32 = 10
+
+if x < y {
+    print("x is less than y")
+}
+
+if x == 5 {
+    print("x equals 5")
+}
+
+if x != y {
+    print("x and y are different")
+}
