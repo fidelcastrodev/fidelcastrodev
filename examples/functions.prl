@@ -1,0 +1,26 @@
+# Functions in Pyrustlang
+# Rust-like function syntax with type annotations
+
+# Function with parameters and return type
+fn add(x: i32, y: i32) -> i32 {
+    return x + y
+}
+
+let sum = add(5, 3)
+print(sum)  # 8
+
+# Function that prints
+fn greet(name: str) -> str {
+    return "Hello, " + name + "!"
+}
+
+let greeting = greet("Alice")
+print(greeting)
+
+# Function without return value
+fn print_square(n: i32) {
+    let result = n * n
+    print(result)
+}
+
+print_square(7)  # 49

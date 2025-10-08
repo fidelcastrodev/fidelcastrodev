@@ -1,0 +1,4 @@
+# Hello World in Pyrustlang
+# Demonstrates basic print functionality
+
+print("Hello, World!")

@@ -1,0 +1,99 @@
+# Pyrustlang Complete Feature Demo
+# Showcases all language features
+
+print("=== Pyrustlang Feature Demo ===")
+
+# 1. Variables with type safety
+print("1. Variables and Type Safety:")
+let x: i32 = 42
+let pi: f64 = 3.14159
+let name: str = "Pyrustlang"
+let active: bool = true
+print(x)
+print(pi)
+print(name)
+print(active)
+
+# 2. Mutability (Rust-inspired)
+print("2. Mutability Control:")
+let mut counter: i32 = 0
+print(counter)
+counter = counter + 1
+print(counter)
+
+# 3. Arithmetic operations
+print("3. Arithmetic Operations:")
+let a: i32 = 15
+let b: i32 = 4
+print(a + b)
+print(a - b)
+print(a * b)
+print(a / b)
+
+# 4. Comparison operators
+print("4. Comparison Operators:")
+print(a > b)
+print(a == 15)
+print(a != b)
+
+# 5. String concatenation
+print("5. String Operations:")
+let greeting = "Hello, " + "World!"
+print(greeting)
+
+# 6. Conditionals
+print("6. Conditional Statements:")
+let age: i32 = 21
+if age >= 18 {
+    print("Adult")
+} else {
+    print("Minor")
+}
+
+# 7. While loops
+print("7. Loops:")
+let mut i: i32 = 1
+while i <= 3 {
+    print(i)
+    i = i + 1
+}
+
+# 8. Functions
+print("8. Functions:")
+fn add(x: i32, y: i32) -> i32 {
+    return x + y
+}
+
+fn multiply(a: i32, b: i32) -> i32 {
+    return a * b
+}
+
+let sum = add(10, 5)
+let product = multiply(4, 7)
+print(sum)
+print(product)
+
+# 9. Recursive function (Fibonacci)
+print("9. Recursion - Fibonacci:")
+fn fib(n: i32) -> i32 {
+    if n <= 1 {
+        return n
+    }
+    let mut a: i32 = 0
+    let mut b: i32 = 1
+    let mut idx: i32 = 2
+    while idx <= n {
+        let mut temp = a + b
+        a = b
+        b = temp
+        idx = idx + 1
+    }
+    return b
+}
+
+print(fib(0))
+print(fib(1))
+print(fib(5))
+print(fib(10))
+
+print("=== Demo Complete ===")
